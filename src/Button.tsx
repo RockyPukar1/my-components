@@ -27,6 +27,7 @@ export const Button = ({ children, variant = 'primary', ...props }: Props) => {
         padding: 10,
         cursor: 'pointer',
       }}
+      className='naxatw-my-5'
     >
       {children}
     </button>

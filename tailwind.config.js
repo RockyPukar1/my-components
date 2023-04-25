@@ -4,5 +4,6 @@ module.exports = {
     theme: {},
     variants: {},
     plugins: [],
+    prefix: 'naxatw-'
   }
   
