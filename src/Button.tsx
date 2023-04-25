@@ -28,9 +28,6 @@ export const Button = ({ children, variant = 'primary', ...props }: Props) => {
         cursor: 'pointer',
       }}
     >
-      <div className="text-red-500 p-4 rounded-lg shadow-lg">
-        This is a sample component with TailwindCSS styles.
-      </div>
       {children}
     </button>
   );

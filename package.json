@@ -72,5 +72,9 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.5.0",
     "typescript": "^3.9.10"
+  },
+  "dependencies": {
+    "@storybook/addon-styling": "^1.0.2",
+    "postcss-loader": "^7.2.4"
   }
 }
