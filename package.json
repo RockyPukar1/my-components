@@ -13,13 +13,8 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test --passWithNoTests",
-    "lint": "tsdx lint",
-    "prepare": "tsdx build",
-    "size": "size-limit",
-    "analyze": "size-limit --why",
-    "storybook": "storybook dev",
-    "build-storybook": "storybook build"
+    "test": "tsdx test",
+    "storybook": "storybook dev -s public -c .storybook"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -59,19 +54,27 @@
     "@storybook/addon-links": "^7.0.6",
     "@storybook/addon-mdx-gfm": "^7.0.6",
     "@storybook/addons": "^7.0.6",
+    "@storybook/cli": "^7.0.7",
     "@storybook/react": "^7.0.6",
     "@storybook/react-webpack5": "^7.0.6",
     "@types/react": "^18.0.38",
     "@types/react-dom": "^18.0.11",
+    "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.2",
     "husky": "^8.0.3",
+    "postcss": "^8.4.23",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
     "size-limit": "^8.2.4",
     "storybook": "^7.0.6",
+    "tailwindcss": "^3.3.1",
     "tsdx": "^0.14.1",
     "tslib": "^2.5.0",
     "typescript": "^3.9.10"
+  },
+  "dependencies": {
+    "@storybook/addon-styling": "^1.0.2",
+    "postcss-loader": "^7.2.4"
   }
 }

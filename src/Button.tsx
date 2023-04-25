@@ -1,5 +1,5 @@
 import React, { HTMLAttributes, ReactNode } from 'react';
-
+import './index.css';
 export interface Props extends HTMLAttributes<HTMLButtonElement> {
   /**
    * Provide a text for the button
@@ -25,7 +25,7 @@ export const Button = ({ children, variant = 'primary', ...props }: Props) => {
         border: 'none',
         borderRadius: 100,
         padding: 10,
-        cursor: 'pointer'
+        cursor: 'pointer',
       }}
     >
       {children}
