@@ -14,7 +14,9 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test",
-    "storybook": "storybook dev -s public -c .storybook"
+    "build-storybook": "storybook build",
+    "storybook": "storybook dev -s public -c .storybook",
+    "chromatic": "npx chromatic --project-token=5cd26ae48ef3"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -31,7 +33,9 @@
     "trailingComma": "es5"
   },
   "name": "my-components",
-  "author": "Rocky Pukar",
+  "author": {
+    "name": "Rocky Pukar"
+  },
   "module": "dist/my-components.esm.js",
   "size-limit": [
     {
@@ -61,6 +65,7 @@
     "@types/react-dom": "^18.0.11",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.2",
+    "chromatic": "^6.17.3",
     "husky": "^8.0.3",
     "postcss": "^8.4.23",
     "react": "^18.2.0",
@@ -76,5 +81,7 @@
   "dependencies": {
     "@storybook/addon-styling": "^1.0.2",
     "postcss-loader": "^7.2.4"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "my-components@0.1.0"
 }
