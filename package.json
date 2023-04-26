@@ -13,10 +13,13 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test",
-    "build-storybook": "storybook build",
-    "storybook": "storybook dev -s public -c .storybook",
-    "chromatic": "npx chromatic --project-token=5cd26ae48ef3"
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "storybook": "storybook dev",
+    "build-storybook": "storybook build"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -63,6 +66,7 @@
     "@storybook/react-webpack5": "^7.0.6",
     "@types/react": "^18.0.38",
     "@types/react-dom": "^18.0.11",
+    "auto": "^10.46.0",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.2",
     "chromatic": "^6.17.3",
