@@ -4,10 +4,29 @@ import { ReactNode, ReactElement } from 'react';
 
 type ButtonType = 'button' | 'reset' | 'submit';
 type Props = {
+  /**
+   * Options are button, reset, submit
+   */
   type: ButtonType,
+
+  /**
+   * Event when the mouse is clicked
+   */
   onClick: React.MouseEventHandler<HTMLButtonElement>,
+
+  /**
+   * The element of button
+   */
   children: ReactNode,
+
+  /**
+   * Tailwindcss classes for styling with naxatw- as prefix
+   */
   className?: string,
+
+  /**
+   * Grey Styling for disabled button
+   */
   disabled?: boolean,
 }
 
