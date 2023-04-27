@@ -1,32 +1,52 @@
-import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
-import { Button, Props } from '../src/Button';
-import { action } from '@storybook/addon-actions';
-
-const meta: Meta<typeof Button> = {
+import {Meta, StoryObj} from "@storybook/react"
+import Button from '../src/components/atoms/button/Button'
+import '../src/index.css';
+const meta: Meta = {
   title: 'Button',
   component: Button,
   argTypes: {
     onClick: { action: 'clicked' },
+    children: {
+      defaultValue: 'Label Button'
+    }
   },
-};
-
+}
 export default meta;
 
 type Story = StoryObj<typeof Button>;
-// const Template: Story = (args) => <Button {...args} />
 
-export const Default: Story = {
+export const small: Story = {
   args: {
-    children: 'DEFAULT TEXT2',
-  },
-};
+    type: 'submit',
+    className: 'naxatw-p-2'
+  }
+}
 
-
-export const Secondary: Story = {
+export const medium: Story = {
   args: {
-    variant: 'secondary',
-    children: 'I am secondary',
-    onClick: action('secondary click'),
-  },
-};
+    type: 'submit',
+    className: 'naxatw-p-3'
+  }
+}
+
+export const large: Story = {
+  args: {
+    type: 'submit',
+    className: 'naxatw-p-4'
+  }
+}
+
+export const Rounded: Story = {
+  args: {
+    type: 'submit',
+    className: 'naxatw-rounded-2xl naxatw-p-2'
+  }
+}
+
+export const Disabled: Story = {
+  args: {
+    type: 'submit',
+    disabled: true,
+    className: ''
+  }
+}
