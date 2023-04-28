@@ -2,8 +2,8 @@
 import React from 'react';
 import { ReactNode, ReactElement } from 'react';
 
-type ButtonType = 'button' | 'reset' | 'submit';
-type Props = {
+export type ButtonType = 'button' | 'reset' | 'submit';
+export type Props = {
   /**
    * Options are button, reset, submit
    */

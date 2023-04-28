@@ -1,14 +1,10 @@
 import {Meta, StoryObj} from "@storybook/react"
 import Button from '../src/components/atoms/button/Button'
-import '../src/index.css';
 const meta: Meta = {
-  title: 'Button',
+  title: 'Atom/Button',
   component: Button,
   argTypes: {
-    onClick: { action: 'clicked' },
-    children: {
-      defaultValue: 'Label Button'
-    }
+    onClick: { action: 'clicked' }
   },
 }
 export default meta;
