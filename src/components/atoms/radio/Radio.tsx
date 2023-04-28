@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type Props = {
+export type RadioProps = {
   id: string;
   label: string;
   checked: boolean;
@@ -9,7 +9,7 @@ export type Props = {
   error?: string; // Add optional error property
 };
 
-const Radio: React.FC<Props> = ({ id, label, checked, onChange, description, error }) => {
+const Radio: React.FC<RadioProps> = ({ id, label, checked, onChange, description, error }) => {
   return (
     <div className='naxatw-flex naxatw-items-center'>
       <label htmlFor={id} className="naxatw-inline-flex naxatw-items-center">

@@ -4,7 +4,7 @@ import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faCoffee, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 type IconProps = {
-  name: 'coffee' | 'envelope';
+  name: string;
 }
 
 const icons: Record<IconProps['name'], IconDefinition> = {
