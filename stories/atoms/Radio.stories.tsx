@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
-import Radio, { Props } from '../src/components/atoms/radio/Radio';
+import Radio, { RadioProps } from '../../src/components/atoms/radio/Radio';
 
 const meta: Meta = {
     title: 'Atom/Radio',

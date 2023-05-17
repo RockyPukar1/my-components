@@ -3,7 +3,7 @@ import Button, { ButtonType } from '../../atoms/button/Button';
 import Image from '../../atoms/image/Image';
 import Typography from '../../atoms/typography/Typography';
 
-type CardProps = {
+export type CardProps = {
   title: string;
   subtitle: string;
   children: React.ReactNode;

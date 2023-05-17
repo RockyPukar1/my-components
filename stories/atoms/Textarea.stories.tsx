@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import Textarea from '../src/components/atoms/textarea/Textarea';
+import Textarea from '../../src/components/atoms/textarea/Textarea';
 
 const meta: Meta = {
   title: 'Atom/Textarea',

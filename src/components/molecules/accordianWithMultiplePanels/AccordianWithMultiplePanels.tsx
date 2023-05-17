@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import Accordion from '../accordian/Accordian';
 import AccordionPanel from '../accordianPanel/AccordianPanel';
 
-type AccordionWithMultiplePanelsProps = {
+type AccordianWithMultiplePanelsProps = {
   panels: {
     title: string;
     content: string;
   }[];
 }
 
-const AccordionWithMultiplePanels: React.FC<AccordionWithMultiplePanelsProps> = ({ panels }) => {
+const AccordianWithMultiplePanels: React.FC<AccordianWithMultiplePanelsProps> = ({ panels }) => {
   const [activePanelIndex, setActivePanelIndex] = useState(-1);
 
   const handlePanelClick = (panelIndex: number) => {
@@ -32,4 +32,4 @@ const AccordionWithMultiplePanels: React.FC<AccordionWithMultiplePanelsProps> = 
   );
 };
 
-export default AccordionWithMultiplePanels;
+export default AccordianWithMultiplePanels;

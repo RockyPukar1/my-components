@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Select from '../src/components/atoms/select/Select';
+import Select from '../../src/components/atoms/select/Select';
 
 const meta: Meta = {
   title: 'Atom/Select',

@@ -9,15 +9,15 @@ type AccordionPanelProps = {
 
 const AccordionPanel: React.FC<AccordionPanelProps> = ({ title, isActive, onClick, children }) => {
   return (
-    <div className={`accordion-panel ${isActive ? 'bg-gray-100' : ''}`}>
-      <div className="accordion-panel-header flex justify-between items-center p-4 cursor-pointer" onClick={onClick}>
-        <div className="accordion-panel-header-title text-lg font-medium">{title}</div>
+    <div className={`accordion-panel ${isActive ? 'naxatw-bg-gray-100' : ''}`}>
+      <div className="accordion-panel-header naxatw-flex naxatw-justify-between naxatw-items-center naxatw-p-4 naxatw-cursor-pointer" onClick={onClick}>
+        <div className="accordion-panel-header-title naxatw-text-lg naxatw-font-medium">{title}</div>
         <div className="accordion-panel-header-icon">
-          <i className={`fas fa-chevron-${isActive ? 'up' : 'down'} text-gray-600`}></i>
+        <span className="material-symbols-outlined">{isActive ? 'expand_less' : 'expand_more'}</span>
         </div>
       </div>
       {isActive && (
-        <div className="accordion-panel-content p-4">
+        <div className="accordion-panel-content naxatw-p-4">
           {children}
         </div>
       )}

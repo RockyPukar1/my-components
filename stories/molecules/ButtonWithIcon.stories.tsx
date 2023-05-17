@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import ButtonWithIcon from '../src/components/molecules/buttonWithIcon/ButtonWithIcon';
+import ButtonWithIcon from '../../src/components/molecules/buttonWithIcon/ButtonWithIcon';
 
 const meta: Meta = {
   title: 'Molecule/ButtonWithIcon',

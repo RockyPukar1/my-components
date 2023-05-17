@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type InputType = 'button' | 'reset' | 'submit';
+export type InputType = 'email' | 'password' | 'text';
 export type InputProps = {
   id: string;
   label: string;
@@ -9,6 +9,7 @@ export type InputProps = {
   className?: string;
   placeholder?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  required?: boolean
 };
 
 const Input: React.FC<InputProps> = ({
@@ -17,7 +18,8 @@ const Input: React.FC<InputProps> = ({
   label,
   type,
   onChange,
-  placeholder = "Enter ..."
+  placeholder = "Enter ...",
+  required = false
 }) => {
   return (
     <>
@@ -28,6 +30,7 @@ const Input: React.FC<InputProps> = ({
         type={type}
         onChange={onChange}
         placeholder={placeholder}
+        required={required}
       />
     </>
   );

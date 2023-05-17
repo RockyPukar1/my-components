@@ -7,6 +7,7 @@ type InputWithLabelProps = InputProps & {
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
   className?: string;
+  required?: boolean
 };
 
 const InputWithLabel: React.FC<InputWithLabelProps> = ({
@@ -17,11 +18,13 @@ const InputWithLabel: React.FC<InputWithLabelProps> = ({
   className,
   id,
   type,
+  required = false
 }) => {
   return (
     <div className={className}>
       <label className="naxatw-block naxatw-mb-1">{label}</label>
       <Input
+        required={required}
         id={id}
         label={label}
         type={type}

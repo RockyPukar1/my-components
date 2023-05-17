@@ -1,5 +1,5 @@
 import {Meta, StoryObj} from "@storybook/react"
-import Button from '../src/components/atoms/button/Button'
+import Button from '../../src/components/atoms/button/Button'
 const meta: Meta = {
   title: 'Atom/Button',
   component: Button,

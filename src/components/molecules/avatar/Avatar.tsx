@@ -2,7 +2,7 @@ import React from 'react';
 import Image from '../../atoms/image/Image';
 import Typography from '../../atoms/typography/Typography';
 
-type AvatarProps = {
+export type AvatarProps = {
   src: string;
   alt: string;
   name: string;

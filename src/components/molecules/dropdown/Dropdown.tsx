@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import Button from '../../atoms/button/Button';
 import Icon from '../../atoms/icon/Icon';
 
-type DropdownProps = {
+export type DropdownProps = {
   options: string[];
   onSelectOption: (option: string) => void;
   selectedOption?: string;
+  disabled?: boolean;
 };
 
-const Dropdown: React.FC<DropdownProps> = ({ options, onSelectOption, selectedOption }) => {
+const Dropdown: React.FC<DropdownProps> = ({ options, onSelectOption, selectedOption = options[0], disabled=false }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const handleDropdownClick = () => {
@@ -22,7 +23,7 @@ const Dropdown: React.FC<DropdownProps> = ({ options, onSelectOption, selectedOp
 
   return (
     <div className="dropdown">
-      <Button onClick={handleDropdownClick}>
+      <Button onClick={handleDropdownClick} disabled={disabled}>
         {selectedOption || 'Select an option'}
         <Icon name={isDropdownOpen ? 'chevron-up' : 'chevron-down'} />
       </Button>

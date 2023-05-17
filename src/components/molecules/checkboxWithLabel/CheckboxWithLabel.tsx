@@ -3,7 +3,7 @@ import Checkbox from '../../atoms/checkbox/Checkbox';
 
 type CheckboxWithLabelProps = {
   label: string;
-  checked: boolean;
+  checked?: boolean;
   onChange: (checked: boolean) => void;
   disabled?: boolean;
   className?: string;
@@ -11,10 +11,10 @@ type CheckboxWithLabelProps = {
 
 const CheckboxWithLabel: React.FC<CheckboxWithLabelProps> = ({
   label,
-  checked,
+  checked = false,
   onChange,
-  disabled,
-  className
+  disabled = false,
+  className = ''
 }) => {
   return (
     <div className={className}>

@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Input from '../src/components/atoms/input/Input';
+import Input from '../../src/components/atoms/input/Input';
 
 const meta: Meta = {
   title: 'Atom/Input',
@@ -10,9 +10,6 @@ const meta: Meta = {
     },
     type: {
       control: { type: 'select', options: ['text', 'password', 'email'] },
-    },
-    disabled: {
-      control: { type: 'boolean' },
     },
   },
 };
@@ -25,7 +22,6 @@ export const Default: Story = {
   args: {
     placeholder: 'Enter text...',
     type: 'text',
-    disabled: false,
   },
 };
 
@@ -33,7 +29,6 @@ export const Password: Story = {
   args: {
     placeholder: 'Enter password...',
     type: 'password',
-    disabled: false,
   },
 };
 
@@ -41,7 +36,6 @@ export const Email: Story = {
   args: {
     placeholder: 'Enter email...',
     type: 'email',
-    disabled: false,
   },
 };
 
@@ -49,6 +43,5 @@ export const Disabled: Story = {
   args: {
     placeholder: 'Enter text...',
     type: 'text',
-    disabled: true,
   },
 };

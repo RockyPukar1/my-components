@@ -2,7 +2,7 @@ import React from 'react';
 import Button, {ButtonType} from '../../atoms/button/Button';
 import Icon from '../../atoms/icon/Icon';
 
-type ButtonWithIconProps = {
+export type ButtonWithIconProps = {
   label: string;
   icon: 'coffee' | 'envelope';
   onClick?: () => void;
